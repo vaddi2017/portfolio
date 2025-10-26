@@ -3,5 +3,5 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react()],
-  base: "/", // ✅ For Netlify use "/" (not /portfolio/)
+  base: "/", // ✅ For Netlify — must be root, not /portfolio/
 });
