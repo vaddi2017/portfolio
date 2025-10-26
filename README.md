@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Interactive Portfolio (Beginner Friendly)
 
 This is a **ready-to-run** starter using **Vite + React + Tailwind + Framer Motion**.
@@ -46,3 +47,6 @@ npm run preview
   ```
 
 Happy building! 🎉
+=======
+# portfolio
+>>>>>>> 66a1cc75c8e583c7abb5e3207aae2d8234947e4f
