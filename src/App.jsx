@@ -25,9 +25,8 @@ export default function App() {
 
       {/* About Me */}
       <section id="about">
-  <About />
-</section>
-
+        <About />
+      </section>
 
       {/* Experience */}
       <section id="experience">
@@ -66,6 +65,9 @@ export default function App() {
 
       {/* Footer */}
       <Footer />
+
+      {/* ✅ Chatbot Floating Icon */}
+      <PavanChatbot />
     </div>
   );
 }
