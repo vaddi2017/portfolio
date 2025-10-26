@@ -1,0 +1,71 @@
+import React from "react";
+import Chatbot from "react-chatbot-kit";
+import "react-chatbot-kit/build/main.css";
+import { createChatBotMessage } from "react-chatbot-kit";
+
+const config = {
+  botName: "PavanBot",
+  initialMessages: [
+    createChatBotMessage("Hi there! 👋 I'm PavanBot — your AI assistant."),
+    createChatBotMessage("I can tell you about my projects, experience, and skills."),
+  ],
+  customStyles: {
+    botMessageBox: { backgroundColor: "#3b82f6" },
+    chatButton: { backgroundColor: "#3b82f6" },
+  },
+};
+
+const MessageParser = ({ children, actions }) => {
+  const parse = (message) => {
+    const text = message.toLowerCase();
+    if (text.includes("project")) actions.handleProjects();
+    else if (text.includes("skills")) actions.handleSkills();
+    else actions.handleDefault();
+  };
+  return React.cloneElement(children, { parse, actions });
+};
+
+const ActionProvider = ({ createChatBotMessage, setState, children }) => {
+  const handleProjects = () => {
+    const msg = createChatBotMessage(
+      "Here are some of my featured projects: 🧠 AI Chatbot, 🏥 O2 Healthcare App, 🛒 Walmart Microservices."
+    );
+    setState((prev) => ({ ...prev, messages: [...prev.messages, msg] }));
+  };
+
+  const handleSkills = () => {
+    const msg = createChatBotMessage(
+      "My top skills: React, Python, AI/ML, Java, Spring Boot, and Cloud Architecture ☁️"
+    );
+    setState((prev) => ({ ...prev, messages: [...prev.messages, msg] }));
+  };
+
+  const handleDefault = () => {
+    const msg = createChatBotMessage(
+      "Try asking about my 'projects' or 'skills'! 😄"
+    );
+    setState((prev) => ({ ...prev, messages: [...prev.messages, msg] }));
+  };
+
+  return (
+    <div>
+      {React.Children.map(children, (child) =>
+        React.cloneElement(child, {
+          actions: { handleProjects, handleSkills, handleDefault },
+        })
+      )}
+    </div>
+  );
+};
+
+export default function PavanChatbot() {
+  return (
+    <div className="fixed bottom-6 right-6 z-50">
+      <Chatbot
+        config={config}
+        messageParser={MessageParser}
+        actionProvider={ActionProvider}
+      />
+    </div>
+  );
+}
