@@ -45,8 +45,3 @@ npm run preview
   ```powershell
   Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
   ```
-
-Happy building! 🎉
-=======
-# portfolio
->>>>>>> 66a1cc75c8e583c7abb5e3207aae2d8234947e4f
