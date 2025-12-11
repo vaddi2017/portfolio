@@ -92,8 +92,8 @@ export default function Hero() {
 
         {/* 📄 Resume Download */}
         <a
-          href="/PavanKishore_Resume.pdf"
-          download="PavanKishore_Resume.pdf"
+          href="/PavanVaddi_FullStackEngineer.pdf"
+           download="PavanVaddi_FullStackEngineer.pdf"
           className="flex items-center gap-2 px-6 py-3 rounded-xl bg-green-600 hover:bg-green-500 transition"
         >
           <FileDown size={18}/> Resume
