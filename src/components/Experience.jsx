@@ -4,7 +4,7 @@ const experience = [
   {
     role: "Mobile Application Developer",
     org: "O2 Hospitals & Healthcare, Minneapolis MN",
-    time: "Sep 2025 – Present",
+    time: "June 2025 – Present",
     points: [
       "Develop secure mobile apps integrating React, Angular, Java and Python.",
       "Optimized AI-driven chatbot workflows to enhance patient engagement.",
