@@ -72,7 +72,7 @@ export default function Hero() {
 
         {/* 🔗 LinkedIn */}
         <a
-          href="https://www.linkedin.com/in/pavan-kishore-vaddi"
+          href="https://www.linkedin.com/in/pavnkv/"
           target="_blank"
           rel="noreferrer"
           className="flex items-center gap-2 px-6 py-3 rounded-xl border border-white/20 hover:bg-white/5 transition"
