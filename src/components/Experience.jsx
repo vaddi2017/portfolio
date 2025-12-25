@@ -13,9 +13,26 @@ const experience = [
     ],
   },
   {
+    role: "Full Stack Developer",
+    org: "JPMorgan Chase & Co.",
+    time: "Dec 2024 – Jun 2025",
+    points: [
+      "Developed interactive admin panels and enterprise tools using React and Node.js, integrating Flask-based middleware to automate internal workflows across multiple departments.",
+      "Designed secure authentication systems using session-based login and JWT tokens to enforce encrypted access across internal and external enterprise endpoints.",
+      "Wrote optimized PostgreSQL queries with indexed joins and partitioning strategies to efficiently manage large-scale enterprise datasets with reduced latency.",
+      "Refactored legacy codebases by modularizing React components and standardizing architecture, improving reusability, reliability, and team collaboration.",
+      "Executed unit and integration testing for APIs and UIs using Pytest and Postman, improving coverage and identifying defects early in the development cycle.",
+      "Built centralized logging middleware to track request/response metrics, capture exception traces, and support audit readiness across enterprise services.",
+      "Developed multi-tenant SaaS features with role-based access control and tenant-level data isolation, ensuring secure and compliant user access.",
+      "Collaborated in Agile ceremonies, participated in user research sessions, and iterated on features to improve usability and customer experience.",
+      "Authored technical documentation and onboarding guides to accelerate developer ramp-up and preserve project continuity.",
+      "Contributed to Python-based network automation tools, gaining hands-on experience in DevOps and automation workflows.",
+    ],
+  },
+  {
     role: "Graduate Research Assistant",
     org: "Eastern Illinois University",
-    time: "Jan 2024 – May 2025",
+    time: "Dec 2023 – Nov 2024",
     points: [
       "Designed microservices and CI/CD pipelines using Jenkins and GitHub Actions.",
       "Built web apps to simulate SSO flows and tested AI/NLP prompts for secure microservices.",
